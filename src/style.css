@@ -1,0 +1,79 @@
+body {
+  padding: 30px 20%;
+}
+
+.heading {
+  justify-content: left;
+  font-size: 3vw;
+  border-bottom: 3px solid black;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section1 {
+  width: 55%;
+  height: auto;
+}
+
+.section2 {
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Leaderboard {
+  border: 3px solid black;
+}
+
+table {
+  width: 100%;
+}
+
+tr:nth-child(even) {
+  background: #fff;
+  padding: 4px;
+}
+
+tr:nth-child(odd) {
+  background: #ccc;
+  padding: 4px;
+}
+
+input {
+  border: 3px solid black;
+  width: 100%;
+  padding: 4px;
+  margin-bottom: 6px;
+}
+
+button {
+  border: 2.5px solid black;
+  box-shadow: 2px 2px;
+  width: 5vw;
+  padding: 4px;
+}
+
+.form1 button {
+  margin-left: 13.4vw;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cols1 {
+  padding: 4px;
+}
