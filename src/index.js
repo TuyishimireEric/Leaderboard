@@ -1,5 +1,6 @@
 import './style.css';
 import { showPlayer, clearFields } from './modules/add-player.js';
+import { savePlayer } from './modules/api.js';
 
 class Player {
   constructor(name, score) {
@@ -13,6 +14,11 @@ document.querySelector('form').addEventListener('submit', (e) => {
   const name = document.querySelector('#name').value;
   const score = document.querySelector('#score').value;
   const player = new Player(name, score);
+  savePlayer();
   showPlayer(player);
   clearFields();
 });
+
+document.querySelector('.refresh').addEventListener('click', showPlayer);
+
+document.addEventListener('DOMContentLoaded', showPlayer);
