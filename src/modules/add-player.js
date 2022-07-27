@@ -1,15 +1,21 @@
-const showPlayer = (player) => {
-  const list = document.querySelector('.Leaderboard');
-  const addedplayer = document.createElement('tr');
-  addedplayer.innerHTML = `
-      <td class="cols1">${player.name}: ${player.score}</td>
-      `;
-  list.appendChild(addedplayer);
-};
+import { getPlayer } from './api.js';
 
 const clearFields = () => {
   document.querySelector('#name').value = '';
   document.querySelector('#score').value = '';
+};
+
+const showPlayer = async () => {
+  const players = await getPlayer();
+  players.result.sort((a, b) => b.score - a.score);
+  const list = document.querySelector('.Leaderboard');
+  players.result.forEach((player) => {
+    const addedplayer = document.createElement('tr');
+    addedplayer.innerHTML = `
+      <td class="cols1">${player.user}: ${player.score}</td>
+      `;
+    list.appendChild(addedplayer);
+  });
 };
 
 export { showPlayer, clearFields };

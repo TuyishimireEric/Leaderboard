@@ -62,6 +62,12 @@ button {
   box-shadow: 2px 2px;
   width: 5vw;
   padding: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 2.5px solid rgb(22, 21, 22);
+  transform: scale(1.05);
 }
 
 .form1 button {
