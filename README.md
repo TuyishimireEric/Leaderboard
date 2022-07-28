@@ -10,7 +10,7 @@ Project image
 - JS
 ## Live Demo
 
-[Todo List](https://tuyishimireeric.github.io/Leaderboard/src/)
+[Leaderboard](https://tuyishimireeric.github.io/Leaderboard/src/)
 
 ## Getting Started
 
