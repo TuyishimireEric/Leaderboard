@@ -12,7 +12,7 @@ const showPlayer = async () => {
   players.result.forEach((player) => {
     const addedplayer = document.createElement('tr');
     addedplayer.innerHTML = `
-      <td class="cols1">${player.user}: ${player.score}</td>
+      <td class="cols">${player.user}: ${player.score}</td>
       `;
     list.appendChild(addedplayer);
   });

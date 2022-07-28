@@ -3,14 +3,14 @@
 This is a JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. 
 
 Project image
-![leadernboard](pic.png)
+![leadernboard](picfin.png)
 ## Built With
 - HTML
 - CSS
 - JS
 ## Live Demo
 
-[Todo List](https://tuyishimireeric.github.io/Leaderboard/src/)
+[Leaderboard](https://tuyishimireeric.github.io/Leaderboard/src/)
 
 ## Getting Started
 
