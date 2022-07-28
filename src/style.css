@@ -50,6 +50,7 @@ body {
 h2 {
   text-align: center;
   color: #ccc;
+  text-shadow: 1px 1px #ffaa4d;
   font-size: 2vw;
 }
 
@@ -149,9 +150,11 @@ button:hover {
 }
 
 h1 {
+  color: #ccc;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-shadow: 2px 2px #ffaa4d;
 }
 
 footer {
