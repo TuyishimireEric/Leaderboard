@@ -4,31 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <title>Leaderboard</title>
-<script defer src="main.js"></script></head>
+<script defer src="main.bundle.js"></script></head>
     <body>
-        <h1 class="heading">Leaderboard</h1>
+        <h1 class="heading">Leaderboard Application</h1>
         <div class="main">
             <section class="section1">
                 <div class="top">
                     <h2>Recent scores </h2>
-                    <button type="submit" class="refresh">refresh</button>
+                    <button type="submit" class="refresh" onclick="location.reload();">refresh</button>
                 </div>
-                <table class="Leaderboard"></table>
+                <div class="area">
+                    <table class="Leaderboard"></table>
+                </div>
             </section>
             <section class="section2">
                 <h2>Add your score </h2>
                 <form id="form" class="form1">
-                    <div>
-                        <input type="text" id="name"  class="name" placeholder="your name" required>
-                        </div>
-                    <div>
-                        <input type="text" id="score" placeholder="your score" required>
+                    <div class="group">
+                        <input type="text" id="name"  class="name" required>
+                        <label>Your Name</label>
+                    </div>
+                    <div class="group">
+                        <input type="number" id="score" required>
+                        <label>Your Score</label>
                     </div>
                     <button type="submit" >submit</button>
                 </form>
             </section>
         </div>
+        <footer></footer>
         <script src="scripts/index.js"></script>
     </body>
 </html>

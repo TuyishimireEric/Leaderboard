@@ -15,6 +15,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
+      title: 'Output Management',
     }),
   ],
   module: {
@@ -24,5 +25,10 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
     ],
+  },
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+   clean: true,
   },
 };
